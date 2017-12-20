@@ -1,0 +1,291 @@
+﻿
+@model calci.Model.CalculateViewModel
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculate</title>
+    <style>
+        body 
+        {
+            background-color: lightcoral;
+        }
+
+        section 
+        {
+            background: black;
+            color: red;
+            border-radius: 1em;
+            padding: 1em;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+    
+</head>
+<body>
+       <section>
+           <h1 style="font-family:Comic Sans MS; font-size: 30px" > <font color="white">CALCULATOR</font></h1>
+           <input type="text" disabled style="font-size: 24px; font-family: Arial; height: 40px; width: 90.0%;" value="@Model.Output" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '7';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '8';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '9';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = 'c';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '*';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+            <tr />
+            <tr>
+                <td>
+
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '4';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '5';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '6';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '/';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+<tr/>
+                <tr>
+                <td>
+                    
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '1';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '2';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '3';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                    <td>
+
+                        @using (Html.BeginForm())
+                        {
+
+                            Model.Input = '-';
+                            @Html.HiddenFor(x => x.Input)
+                            @Html.HiddenFor(x => x.Output)
+                            @Html.HiddenFor(x => x.Operand1)
+                            @Html.HiddenFor(x => x.Operand2)
+                            @Html.HiddenFor(x => x.Operator)
+                            @Html.HiddenFor(x => x.OperandIndex)
+                            <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                        }
+                    </td>
+                    <td>
+                        @using (Html.BeginForm())
+                        {
+                            Model.Input = '=';
+                            @Html.HiddenFor(x => x.Input)
+                            @Html.HiddenFor(x => x.Output)
+                            @Html.HiddenFor(x => x.Operand1)
+                            @Html.HiddenFor(x => x.Operand2)
+                            @Html.HiddenFor(x => x.Operator)
+                            @Html.HiddenFor(x => x.OperandIndex)
+                            <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                        }
+                    </td>
+                <tr/>
+                <tr>
+                <td>
+                    
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '.';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '0';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '^';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+                <td>
+                    @using (Html.BeginForm())
+                    {
+                        Model.Input = '+';
+                        @Html.HiddenFor(x => x.Input)
+                        @Html.HiddenFor(x => x.Output)
+                        @Html.HiddenFor(x => x.Operand1)
+                        @Html.HiddenFor(x => x.Operand2)
+                        @Html.HiddenFor(x => x.Operator)
+                        @Html.HiddenFor(x => x.OperandIndex)
+                        <input type="submit" value="@Model.Input" name="submit" style="font-size: 24px; height: 35px; width: 100.0%;" />
+                    }
+                </td>
+            <tr />
+
+            </table>
+       </section>
+    </body>
+</html>

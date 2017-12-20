@@ -1,0 +1,39 @@
+﻿@model calci.Model.CalculateViewModel
+
+@{
+Layout =null;
+ViewBag.Title = "Result";
+}
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-color: black;
+}
+section
+    {
+        background: Lightblue;
+        color: red;
+        border-radius: 1em;
+        padding: 1em;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%)
+    }
+</style>
+</head>
+<body>
+    <section>
+          <br />
+          <br />
+          <h2>Result</h2>
+          @Model.Operand1 @Model.Operator @Model.Operand2
+          <br />
+          Result = @Model.Result
+    </section>
+    </body>
+</html>
+
